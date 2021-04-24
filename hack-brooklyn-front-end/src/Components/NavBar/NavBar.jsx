@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 
 class NavBar extends Component{
     render(){
@@ -10,6 +10,13 @@ class NavBar extends Component{
                     <Nav className = "mr-auto">
                         <Nav.Link href= "/Dashboard">Dashboard</Nav.Link>
                     </Nav>
+
+                    <Form inline>
+                        <FormControl type="text" placeholder="Username" className="mr-sm-2"/>
+                        <FormControl type="text" placeholder="Username" className="mr-sm-2"/>
+                        <Button variant="outline-info">Enter</Button>
+                    </Form>
+
                 </Navbar>
             </>
         )

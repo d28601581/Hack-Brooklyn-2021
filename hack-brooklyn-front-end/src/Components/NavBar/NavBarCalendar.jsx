@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Button} from 'react-bootstrap';
 
 class NavBar extends Component{
     render(){
@@ -9,6 +9,7 @@ class NavBar extends Component{
                     <Navbar.Brand href = "/Main">Home</Navbar.Brand>
                     <Nav className = "mr-auto">
                         <Nav.Link href= "/Drafts">Drafts</Nav.Link>
+                        <Button variant="outline-info">Create</Button>
                     </Nav>
                 </Navbar>
             </>
