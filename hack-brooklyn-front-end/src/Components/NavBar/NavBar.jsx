@@ -14,7 +14,7 @@ class NavBar extends Component{
                     <Form inline>
                         <FormControl type="text" placeholder="Username" className="mr-sm-2"/>
                         <FormControl type="text" placeholder="Password" className="mr-sm-2"/>
-                        <Button variant="outline-info">Enter</Button>
+                        <Button variant="outline-info">Sign In</Button>
                     </Form>
 
                 </Navbar>
