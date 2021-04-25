@@ -15,6 +15,8 @@ class Dashboard extends Component{
         }
 
         this.onTriggerChange = this.onTriggerChange.bind(this);
+        this.onTriggerChange2 = this.onTriggerChange2.bind(this);
+
     }
 
     onTriggerChange = () => {

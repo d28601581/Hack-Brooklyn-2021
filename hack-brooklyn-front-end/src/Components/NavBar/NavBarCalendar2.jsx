@@ -20,6 +20,7 @@ import ColorChoice from '../ColorChoice';
                     <Nav.Link href= "/Drafts">Drafts</Nav.Link>
                     <Nav.Link eventKey={2} onClick ={handleShow}>New Task</Nav.Link>
                 </Nav> 
+                
             </Navbar>
             <Modal show ={show} onHide ={handleClose}>
                 <Modal.Header closeButton>

@@ -3,6 +3,7 @@ import { Editor } from "react-draft-wysiwyg";
 import { EditorState, convertToRaw } from 'draft-js';
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from 'draftjs-to-html';
+import './TextEditor.css';
 
 
 export default class TextEditor extends Component {
@@ -33,9 +34,6 @@ export default class TextEditor extends Component {
                     editorClassName="editorClassName"
                     onEditorStateChange={this.onEditorStateChange}
                 />
-
-                <button>Save</button>
-                <button>Close</button>
 
             </div>
 
