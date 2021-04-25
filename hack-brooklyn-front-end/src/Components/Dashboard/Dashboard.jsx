@@ -51,7 +51,7 @@ class Dashboard extends Component{
             <button onClick={this.onTriggerChange}>Text Editor</button>
             <button onClick={this.onTriggerChange2}>Save Text Editor</button>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <h4>Do Not Stress And Have Task Up Management Your Day</h4>
+            <h4>Do Not Stress And Leave It To Task Up</h4>
             <FooterMessage/>
         </div>
     )
