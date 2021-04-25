@@ -4,7 +4,7 @@ import './Background.css';
 const Background = () => {
     return(
         <div className="bg">
-            <div className="message">
+            <div class="message">
                
                 <h1>WELCOME</h1>
                 <p>The place to manage your daily tasks</p>
