@@ -4,6 +4,7 @@ import NavBarCalendar2 from '../NavBar/NavBarCalendar2';
 import '../TextEditor/TextEditor.css';
 import TextEditor from '../TextEditor/TextEditor';
 import './DashCalendar.css';
+import FooterMessage from '../FooterMessage/FooterMessage';
 
 
 class Dashboard extends Component{
@@ -21,26 +22,37 @@ class Dashboard extends Component{
             TextEditorTrigger: true,
         });
     };
+
+    onTriggerChange2 = () => {
+        this.setState({
+            TextEditorTrigger: false,
+        });
+    };
     
     render(){
     
     return(
         <div className="dash"> 
-         {this.state.TextEditorTrigger ?
+         
+            <NavBarCalendar2/>
+            {this.state.TextEditorTrigger ?
                 <div className="editor">
                     <TextEditor />
-                </div> :null}
-            <NavBarCalendar2/>
-            <div >
+                </div> 
+            :null}
+
+            <div>
                 <h1>Hello user</h1>
                 <DashCalendar/>
-                
-         
                 
                  
             </div>
             
-            <button onClick={this.onTriggerChange}>Create new text editor</button>
+            <button onClick={this.onTriggerChange}>Text Editor</button>
+            <button onClick={this.onTriggerChange2}>Save Text Editor</button>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h4>Do Not Stress And Have Task Up Management Your Day</h4>
+            <FooterMessage/>
         </div>
     )
     // ) 

@@ -3,9 +3,6 @@
     padding: 50px;
 }
 
-.responsive-calendar{
-    font-size: 9px;
-}
 
 .dash{
     background-size: cover;
@@ -13,6 +10,7 @@
     height: 100%;
 }
 
-h1{
+h1, h4, h5{
     text-align: center;
+
 }

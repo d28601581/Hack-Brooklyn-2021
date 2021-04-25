@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Navbar, Nav, Button, Modal, InputGroup, FormControl} from 'react-bootstrap';
 import DateTimePicker from 'react-datetime-picker';
 import ColorChoice from '../ColorChoice';
-import TextEditor from '../TextEditor/TextEditor';
+
 
  function NavBarCalendar2(){
     const [show, setShow] = useState(false);
