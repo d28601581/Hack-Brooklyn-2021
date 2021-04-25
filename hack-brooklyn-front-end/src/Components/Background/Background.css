@@ -3,20 +3,24 @@ body, html {
 }
 
 .bg {
-background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
-background-image: url("https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+    background-image: url("https://wallpaperaccess.com/full/2581461.jpg");
 
 
-height: 100vh;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    height: 93.8vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.message{
+
+
+.message {
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    margin: auto;
-    width: 50;
-    padding: 10px;
-    
+    size: 100px;
+    margin: 0;
 }

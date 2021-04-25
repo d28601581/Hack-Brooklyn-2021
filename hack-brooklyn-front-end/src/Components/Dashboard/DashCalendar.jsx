@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import './DashCalendar.css';
 
-function MyCalender() {
+function DashCalendar() {
   const [value, onChange] = useState(new Date());
 
   const task = value => {
@@ -10,14 +10,15 @@ function MyCalender() {
   }
 
   return (
-    <div>
+    <div className="calen">
       <Calendar
         onChange={onChange}
         value={value}
-        onClickDay={task}
+        
       />
+
+      
     </div>
   );
 }
-
-export default MyCalender;
+export default DashCalendar;
