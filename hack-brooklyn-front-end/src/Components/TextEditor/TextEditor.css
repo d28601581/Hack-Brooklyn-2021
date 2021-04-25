@@ -1,0 +1,9 @@
+.editor {
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-color: black;
+    color: black;
+}
