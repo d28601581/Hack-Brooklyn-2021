@@ -3,7 +3,8 @@ import DashCalendar from './DashCalendar';
 import NavBarCalendar2 from '../NavBar/NavBarCalendar2';
 import '../TextEditor/TextEditor.css';
 import TextEditor from '../TextEditor/TextEditor';
-
+import './DashCalendar.css';
+import FooterMessage from '../FooterMessage/FooterMessage';
 
 
 class Dashboard extends Component{
@@ -13,18 +14,18 @@ class Dashboard extends Component{
             TextEditorTrigger: false,
         }
 
-        this.onTriggerTrue = this.onTriggerTrue.bind(this);
-        this.onTriggerFalse = this.onTriggerFalse.bind(this);
+        this.onTriggerChange = this.onTriggerChange.bind(this);
+        this.onTriggerChange2 = this.onTriggerChange2.bind(this);
 
     }
 
-    onTriggerTrue = () => {
+    onTriggerChange = () => {
         this.setState({
             TextEditorTrigger: true,
         });
     };
 
-    onTriggerFalse = () => {
+    onTriggerChange2 = () => {
         this.setState({
             TextEditorTrigger: false,
         });
@@ -32,26 +33,45 @@ class Dashboard extends Component{
     
     render(){
     
-    return (
-        <div>
-            <NavBarCalendar2 trigger={this.state.TextEditorTrigger}/>
+    return(
+        <div className="dash"> 
+         
+            <NavBarCalendar2/>
+            {this.state.TextEditorTrigger ?
+                <div className="editor">
+                    <TextEditor />
+                </div> 
+            :null}
+
             <div>
-                <h1>Hello</h1>
+                <h1>Hello user</h1>
                 <DashCalendar/>
                 
+                 
             </div>
             
-            <button onClick={this.onTriggerTrue}>Create new text editor</button>
-
-            {this.state.TextEditorTrigger ?
-                <div className='editor'>
-                    <TextEditor />
-                    <button onClick={this.onTriggerFalse}>Save</button>
-                    <button onClick={this.onTriggerFalse}>Close</button>
-                </div> : null}
-
+            <button onClick={this.onTriggerChange}>Text Editor</button>
+            <button onClick={this.onTriggerChange2}>Save Text Editor</button>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h4>Do Not Stress And Leave It To Task Up</h4>
+            <FooterMessage/>
         </div>
-        )
+    )
+    // ) 
+    // :
+        // (
+        //     <div>
+        //         <NavBarCalendar2 />
+        //         <div>
+        //             <h1>Hello</h1>
+        //             <DashCalendar />
+
+        //         </div>
+
+        //         <button onClick={this.onTriggerChange}>Create new text editor</button>
+        //     </div>
+
+        // )
     }
 }
 

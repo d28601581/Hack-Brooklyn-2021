@@ -11,10 +11,11 @@ function DashCalendar() {
 
   return (
     <div className="calen">
-      <Calendar
+      <Calendar 
+        calendarClassName="responsive-calendar"
         onChange={onChange}
         value={value}
-        
+        onClickDay = {task}
       />
 
       

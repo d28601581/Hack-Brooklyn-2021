@@ -7,7 +7,7 @@ const Background = () => {
             <div class="message">
                
                 <h1>WELCOME</h1>
-                <p>The place to manage your daily tasks</p>
+                <p>The application to manage your daily tasks</p>
                
             </div>
         </div>
