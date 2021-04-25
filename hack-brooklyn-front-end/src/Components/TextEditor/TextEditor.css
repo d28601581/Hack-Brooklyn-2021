@@ -1,6 +1,9 @@
 .editor {
-    width: 900px;
-    margin-left: 30%;
-    margin-top: 50px;
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    margin-left: 50%;
+    margin-top: 20%;
+    border-color: black;
     color: black;
 }

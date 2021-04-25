@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Navbar, Nav, Button, Modal, InputGroup, FormControl} from 'react-bootstrap';
 import DateTimePicker from 'react-datetime-picker';
 import ColorChoice from '../ColorChoice';
+import TextEditor from '../TextEditor/TextEditor';
 
  function NavBarCalendar2(){
     const [show, setShow] = useState(false);
@@ -17,10 +18,9 @@ import ColorChoice from '../ColorChoice';
                 <Navbar.Brand href = "/">Home</Navbar.Brand>
                 <Nav className = "mr-auto">
                     <Nav.Link href= "/Drafts">Drafts</Nav.Link>
-                    <Nav.Link eventKey={2} href ="#none" onClick ={handleShow}>Create</Nav.Link>
+                    <Nav.Link eventKey={2} onClick ={handleShow}>New Task</Nav.Link>
                 </Nav> 
             </Navbar>
-
             <Modal show ={show} onHide ={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Task</Modal.Title>
@@ -73,7 +73,6 @@ import ColorChoice from '../ColorChoice';
                     <Button variant="primary" onClick={handleClose}>Save</Button>
                 </Modal.Footer>
             </Modal>
-           
         </>
     )
     
